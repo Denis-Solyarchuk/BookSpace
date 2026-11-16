@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    font-family: Arial, sans-serif;
+    color: #f3f4f6;
+    background: #111827;
+    line-height: 1.5;
+    color-scheme: dark;
+}
+body {
+    margin: 0;
+}
+a {
+    color: #c4b5fd;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+header {
+    background: #1b2434;
+    border-bottom: 1px solid #344155;
+}
+nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.brand {
+    font-weight: 800;
+    font-size: 24px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.nav-links a {
+    color: #d1d5db;
+}
+.nav-links .active {
+    color: #c4b5fd;
+    font-weight: bold;
+}
+main {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 36px 24px;
+    min-height: 75vh;
+}
+h1 {
+    font-size: clamp(28px, 5vw, 44px);
+    line-height: 1.15;
+    margin: 0 0 22px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    overflow-wrap: anywhere;
+}
+.hero {
+    padding: 55px 34px;
+    border-radius: 20px;
+    background: linear-gradient(120deg, #252443, #1e293b);
+    margin-bottom: 32px;
+}
+.hero p {
+    max-width: 550px;
+    color: #d1d5db;
+}
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.button,
+button {
+    display: inline-block;
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 16px;
+    background: #7652c0;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.button:hover,
+button:hover {
+    background: #8b67d4;
+    text-decoration: none;
+}
+.button.secondary,
+button.secondary {
+    background: #344155;
+}
+button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(235px, 100%), 1fr));
+    gap: 18px;
+    margin-top: 24px;
+}
+.card {
+    background: #1e293b;
+    border: 1px solid #344155;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.card-body {
+    padding: 18px;
+}
+.muted {
+    color: #b5bed0;
+}
+.card p {
+    margin: 6px 0 16px;
+}
+.cover {
+    height: 235px;
+    background: #2d354c;
+    display: grid;
+    place-items: center;
+}
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cover span {
+    font-size: 64px;
+}
+.image-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+.image-card a {
+    font-size: 14px;
+}
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.actions select {
+    width: 100%;
+}
+.search {
+    display: flex;
+    gap: 12px;
+    max-width: 720px;
+    margin-bottom: 24px;
+}
+.search input {
+    flex: 1;
+    min-width: 0;
+}
+input,
+select {
+    background: #252e40;
+    color: #fff;
+    border: 1px solid #526079;
+    border-radius: 8px;
+    padding: 12px;
+    font: inherit;
+}
+label {
+    display: grid;
+    gap: 6px;
+}
+.form {
+    display: grid;
+    gap: 18px;
+    padding: 24px;
+    max-width: 520px;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.stats div {
+    padding: 16px;
+    background: #1e293b;
+    border-radius: 12px;
+    color: #c4b5fd;
+}
+.stats strong {
+    display: block;
+    font-size: 30px;
+    color: white;
+}
+progress {
+    width: 100%;
+    accent-color: #a78bfa;
+}
+.filter {
+    max-width: 240px;
+    margin-top: 24px;
+}
+.notice {
+    background: #263248;
+    padding: 16px;
+    border-radius: 8px;
+}
+.error {
+    color: #fda4af;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #a7b0c2;
+    font-size: 14px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+:focus-visible {
+    outline: 3px solid #c4b5fd;
+    outline-offset: 3px;
+}
+@media (max-width: 500px) {
+    .stats div {
+        padding: 9px;
+        font-size: 12px;
+    }
+    .nav-links {
+        gap: 12px;
+    }
+    .hero {
+        padding: 28px 20px;
+    }
+    main {
+        padding: 24px 16px;
+    }
+}
+
+.reading-progress {
+  width: 100%;
+  height: 10px;
+  background: #334155;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.reading-progress-fill {
+  height: 100%;
+  background: #34d399;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+
+/* Виправлення сітки карток */
+
+.grid {
+  grid-template-columns: repeat(
+    auto-fill, minmax(min(235px, 100%), 1fr)
+  );
+  align-items: stretch;
+}
+
+/* Картка книги */
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Контейнер обкладинки */
+
+.book-card .cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  flex-shrink: 0;
+  padding: 15px;
+  overflow: hidden;
+  background-color: #151e2e;
+}
+
+/* Зображення обкладинки */
+
+.book-card .cover img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Інформація про книгу */
+
+.book-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 18px;
+  background-color: #1e293b;
+}
+
+.book-card h3 {
+  font-size: 18px;
+  color: #f3f4f6;
+  overflow-wrap: anywhere;
+}
+
+.book-card .actions {
+  margin-top: auto;
+  padding-top: 10px;
+}

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`snapshot картки 1`] = `
+<DocumentFragment>
+  <article
+    class="card image-card"
+    data-testid="image-card"
+  >
+    <img
+      alt="Library"
+      loading="lazy"
+      src="https://example.com/library.jpg"
+    />
+    <div
+      class="card-body"
+    >
+      <h3>
+        Library
+      </h3>
+      <a
+        href="https://example.com/source"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Джерело та ліцензія
+      </a>
+    </div>
+  </article>
+</DocumentFragment>
+`;
